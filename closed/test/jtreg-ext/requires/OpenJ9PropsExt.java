@@ -38,6 +38,7 @@ public class OpenJ9PropsExt implements Callable<Map<String, String>> {
         try {
             map.put("vm.bits", vmBits());
             map.put("vm.compiler2.enabled", "false");
+            map.put("vm.gc.G1", "false");
             map.put("vm.gc.Z", "false");
             map.put("vm.graal.enabled", "false");
             map.put("vm.hasJFR", "false");
